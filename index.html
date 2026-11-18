@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>من Linux إلى الـ SOC</title>
+<meta name="description" content="مسار واحد مرتب من Linux Administration إلى SOC Analyst L1 ثم L2، مع تتبع التقدم في المتصفح.">
+<meta property="og:title" content="من Linux إلى الـ SOC">
+<meta property="og:description" content="خطة دراسية متسلسلة من Linux إلى محلل SOC مع تتبع التقدم في المتصفح.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#14213d">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>من Linux إلى الـ SOC</h1>
+<p class="sub">مسار واحد متسلسل من Linux Administration إلى SOC Analyst L1 ثم L2. اضغط على الدائرة عند إنهاء الدرس، ويتحفظ تقدمك في متصفحك.</p>
+<div class="hero">
+<div class="ring" id="ring"><b id="pc">0%</b></div>
+<div class="t"><div class="verdict" id="hl"></div><div class="k" id="hs"></div></div>
+<button class="btn" id="next">اذهب للدرس التالي</button>
+</div>
+</header>
+<nav role="tablist" id="tabs"></nav>
+
+<section id="v-path">
+<div class="tools">
+<input type="search" id="q" placeholder="ابحث عن درس أو محاضر أو أداة" aria-label="بحث">
+</div>
+<div class="tools" id="fk" aria-label="نوع الدرس"></div>
+<div class="tools" id="fc" aria-label="الكورس"></div>
+<div class="tools"><button class="chip" id="hd" aria-pressed="false">إخفاء المنتهي</button><button class="btn g" id="rs">تصفير التقدم</button></div>
+<div id="phases"></div>
+</section>
+
+<section id="v-lists" class="hide"></section>
+
+<section id="v-soc" class="hide">
+<div class="card"><h3>قبل الشغل في SOC: توزيع المسار على الأسابيع</h3>
+<p class="k">مسار متسلسل: ننتقل بين المحاضرين حسب ترتيب المهارة، وليس حسب ترتيب القنوات، مع منع التكرار والتركيز على التطبيق العملي.</p>
+<div class="scr"><table>
+<tr><th>الأسابيع</th><th>الهدف</th></tr>
+<tr><td>1</td><td>المرحلة 1: أساسيات Linux وتجهيز المعمل (توزيعتين + طرفية + نظام ملفات)</td></tr>
+<tr><td>2</td><td>المرحلة 2: المستخدمون والصلاحيات والملكية (الطناني أساس + مراجعات النعيمي)</td></tr>
+<tr><td>3</td><td>المراحل 3–4: البحث والنصوص + العمليات والخدمات ومراقبة النظام</td></tr>
+<tr><td>4</td><td>المرحلة 5: شبكات Linux وNmap وMITM وWireshark وSSH</td></tr>
+<tr><td>5</td><td>المراحل 6–7: سجلات Linux (rsyslog/journald) + أول تحقيق SSH + الحزم والتخزين</td></tr>
+<tr><td>6</td><td>المرحلة 8: Bash Scripting والمشاريع وAWK/SED + جدولة المهام</td></tr>
+<tr><td>7</td><td>المرحلة 9: خدمات Linux وخوادم الويب (وظيفي فقط) + المرحلة 10: سجلات Windows وAD</td></tr>
+<tr><td>8</td><td>المرحلة 11: أساسيات SOC + المرحلة 12: بناء معمل Wazuh وربط الأجهزة</td></tr>
+<tr><td>9</td><td>المراحل 13–14: MITRE ATT&CK + EDR والتحقيق في Defender</td></tr>
+<tr><td>10–11</td><td>المرحلة 15: تحقيقات SOC L1 الخمس + تقرير حادث وتصعيد</td></tr>
+<tr><td>12+</td><td>المرحلة 16: Threat Hunting وKQL/SPL وDFIR والمشروع النهائي</td></tr>
+</table></div>
+<p class="k">معدل الدراسة المستهدف: 20+ ساعة/أسبوع. تقدير الوصول إلى جاهزية L1: 10–14 أسبوعًا، والتوسع إلى L2: 4–8 أسابيع إضافية.</p>
+</div>
+<div class="card"><h3>متى تعتبر نفسك جاهزًا؟</h3>
+<p>عند إكمال الأساسيات وتنفيذ حالات SOC L1 باستقلالية، ثم بناء مشروع ختامي يثبت قدرتك على جمع الأدلة، وتحليلها، وربطها بـ MITRE، واستخدام SIEM وEDR، وكتابة تقرير حادث.</p>
+</div>
+</section>
+
+<section id="v-encor" class="hide">
+<div class="card"><h3>المصادر الإضافية والمراجع المكررة</h3>
+<p class="k">احتفظ بها للرجوع، لكن لا تجعلها عبئًا إضافيًا على الجدول الأساسي.</p>
+<div id="resList"></div>
+</div>
+<div class="card"><h3>الترتيب مقصود ومترابط</h3>
+<p>ستجد محاضرات من الطناني ثم عبدالله النعيمي ثم Security Jordan في الموضع الذي تحتاجه فيه. الدروس المكررة تظهر كاختيارية أو في قسم المراجعة ولا تعطل تقدمك.</p>
+</div>
+</section>
+</div>
+
+<script src="js/curriculum.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
